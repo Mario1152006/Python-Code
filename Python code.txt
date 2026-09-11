@@ -1,0 +1,22 @@
+result = float(input("Enter first number: "))
+
+while True:
+    op = input("Enter operator (+, -, *, /) or = to finish: ")
+
+    if op == "=":
+        break
+
+    num = float(input("Enter next number: "))
+
+    if op == "+":
+        result += num
+    elif op == "-":
+        result -= num
+    elif op == "*":
+        result *= num
+    elif op == "/":
+        result /= num
+    else:
+        print("Invalid operator!")
+
+print("Answer =", result)
